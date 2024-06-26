@@ -1,0 +1,12 @@
+let hrs=document.getElementById("hrs");
+let sec=document.getElementById("sec");
+let mins=document.getElementById("mins");
+
+
+setInterval(() => {
+    const time=new Date();
+
+hrs.innerHTML=(time.getHours()<10?"0":"")+time.getHours();
+sec.innerHTML=(time.getSeconds()<10?"0":"")+time.getSeconds();
+mins.innerHTML=(time.getMinutes()<10?"0":"")+time.getMinutes();
+}, 1000);
